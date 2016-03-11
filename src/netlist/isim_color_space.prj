@@ -1,0 +1,3 @@
+verilog work color_space.v
+verilog work color_space_cw.v
+verilog work $XILINX/verilog/src/glbl.v

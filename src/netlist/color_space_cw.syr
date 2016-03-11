@@ -1,0 +1,935 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+Reading constraint file C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xcf.
+XCF parsing done.
+Reading design: color_space_cw.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "color_space_cw.prj"
+Synthesis Constraint File          : "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xcf"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "color_space_cw"
+Output Format                      : NGC
+Target Device                      : xc6vlx130t-1-ff1156
+
+---- Source Options
+Top Module Name                    : color_space_cw
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : []
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Sechw\Documents\MATLAB\4440\netlist\ipcore_dir\divider1.v" into library work
+Parsing module <divider1>.
+Analyzing Verilog file "C:\Users\Sechw\Documents\MATLAB\4440\netlist\ipcore_dir\divider0.v" into library work
+Parsing module <divider0>.
+Analyzing Verilog file "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" into library work
+Parsing module <srl17e>.
+Parsing module <synth_reg>.
+Parsing module <synth_reg_reg>.
+Parsing module <synth_reg_w_init>.
+Parsing module <single_reg_w_init>.
+Parsing module <cast>.
+Parsing module <shift_division_result>.
+Parsing module <shift_op>.
+Parsing module <pad_lsb>.
+Parsing module <zero_ext>.
+Parsing module <sign_ext>.
+Parsing module <extend_msb>.
+Parsing module <align_input>.
+Parsing module <round_towards_inf>.
+Parsing module <round_towards_even>.
+Parsing module <trunc>.
+Parsing module <saturation_arith>.
+Parsing module <wrap_arith>.
+Parsing module <convert_type>.
+Parsing module <rgbtohsv_fixpt>.
+Parsing module <xyztorgb_fixpt>.
+Parsing module <constant_ae323e07fc>.
+Parsing module <mux_1495816f5f>.
+Parsing module <rgbtoxyz_fixpt>.
+Parsing module <rgbtoyiq_fixpt>.
+Parsing module <yiqtorgb_fixpt>.
+Parsing module <hsvtorgb_fixpt>.
+Parsing module <color_space>.
+Analyzing Verilog file "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v" into library work
+Parsing module <xlclockdriver>.
+Parsing module <default_clock_driver_Color_Space>.
+Parsing module <color_space_cw>.
+Parsing module <xlpersistentdff>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <color_space_cw>.
+
+Elaborating module <color_space>.
+
+Elaborating module <constant_ae323e07fc>.
+
+Elaborating module <hsvtorgb_fixpt>.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 2443: Assignment to enb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 2913: Assignment to hsv_to_rgb_ce_out_net ignored, since the identifier is never used
+
+Elaborating module <mux_1495816f5f>.
+WARNING:HDLCompiler:1016 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1243: Port rfd is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1253: Port rfd is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1263: Port rfd is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1273: Port rfd is not connected to this instance
+
+Elaborating module <rgbtohsv_fixpt>.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1230: Assignment to enb ignored, since the identifier is never used
+
+Elaborating module <divider0>.
+WARNING:HDLCompiler:189 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1245: Size mismatch in connection of port <nd>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1251: Assignment to divider_fractional0 ignored, since the identifier is never used
+
+Elaborating module <divider1>.
+WARNING:HDLCompiler:189 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1255: Size mismatch in connection of port <nd>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1261: Assignment to divider_fractional1 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1265: Size mismatch in connection of port <nd>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1271: Assignment to divider_fractional2 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1275: Size mismatch in connection of port <nd>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1281: Assignment to divider_fractional3 ignored, since the identifier is never used
+WARNING:HDLCompiler:91 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1430: Signal <divider_quotient0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1462: Signal <divider_quotient1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1490: Signal <divider_quotient2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1527: Signal <divider_quotient3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 2991: Assignment to rgb_to_hsv_ce_out_net ignored, since the identifier is never used
+
+Elaborating module <rgbtoxyz_fixpt>.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1944: Assignment to enb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 3004: Assignment to rgb_to_xyz_ce_out_net ignored, since the identifier is never used
+
+Elaborating module <rgbtoyiq_fixpt>.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 2102: Assignment to enb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 3017: Assignment to rgb_to_yiq_ce_out_net ignored, since the identifier is never used
+
+Elaborating module <xyztorgb_fixpt>.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 1719: Assignment to enb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 3031: Assignment to xyz_to_rgb_ce_out_net ignored, since the identifier is never used
+
+Elaborating module <yiqtorgb_fixpt>.
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 2265: Assignment to enb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" Line 3044: Assignment to yiq_to_rgb_ce_out_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1016 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v" Line 329: Port clr is not connected to this instance
+
+Elaborating module <default_clock_driver_Color_Space>.
+
+Elaborating module <xlclockdriver(log_2_period=1,period=1,use_bufg=0)>.
+WARNING:HDLCompiler:413 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v" Line 200: Result of 2-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <synth_reg_w_init(width=1,init_index=0,init_value=32'b0,latency=1)>.
+
+Elaborating module <single_reg_w_init(width=1,init_index=0,init_value=1'b0)>.
+
+Elaborating module <FDRE>.
+
+Elaborating module <xlpersistentdff>.
+WARNING:HDLCompiler:1499 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v" Line 428: Empty module <xlpersistentdff> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <color_space_cw>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v".
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x0>.
+    Set property "syn_keep = 1" for signal <persistentdff_inst_q>.
+WARNING:Xst - Value "1" of property "keep" is not applicable. List of valid values is "false, no, soft, true, yes" 
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <color_space_cw> synthesized.
+
+Synthesizing Unit <color_space>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 2905: Output port <ce_out> of the instance <hsv_to_rgb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 2984: Output port <ce_out> of the instance <rgb_to_hsv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 2997: Output port <ce_out> of the instance <rgb_to_xyz> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 3010: Output port <ce_out> of the instance <rgb_to_yiq> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 3023: Output port <ce_out> of the instance <xyz_to_rgb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 3036: Output port <ce_out> of the instance <yiq_to_rgb> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <color_space> synthesized.
+
+Synthesizing Unit <constant_ae323e07fc>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_ae323e07fc> synthesized.
+
+Synthesizing Unit <hsvtorgb_fixpt>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit subtractor for signal <n0083[7:0]> created at line 2547.
+    Found 22-bit subtractor for signal <n0087[21:0]> created at line 2564.
+    Found 16-bit subtractor for signal <hsvtorgb_fixpt_sub_temp_1_1> created at line 2580.
+    Found 23-bit subtractor for signal <n0093[22:0]> created at line 2589.
+    Found 8-bit adder for signal <h[7]_GND_4_o_add_35_OUT> created at line 2742.
+    Found 8-bit adder for signal <h[7]_GND_4_o_add_40_OUT> created at line 2750.
+    Found 8-bit adder for signal <h[7]_GND_4_o_add_45_OUT> created at line 2758.
+    Found 13x14-bit multiplier for signal <n0079> created at line 2496.
+    Found 13x14-bit multiplier for signal <n0080> created at line 2509.
+    Found 13x14-bit multiplier for signal <n0081> created at line 2523.
+    Found 6x3-bit multiplier for signal <n0082> created at line 2525.
+    Found 6x15-bit multiplier for signal <hsvtorgb_fixpt_mul_temp_3_1[20:0]> created at line 2554.
+    Found 6x14-bit multiplier for signal <hsvtorgb_fixpt_mul_temp_4_1[19:0]> created at line 2562.
+    Found 6x29-bit multiplier for signal <n0089> created at line 2571.
+    Found 6x15-bit multiplier for signal <hsvtorgb_fixpt_mul_temp_6_1[20:0]> created at line 2587.
+    Found 6x30-bit multiplier for signal <n0095> created at line 2596.
+    Found 14x8-bit multiplier for signal <n0096> created at line 2737.
+    Found 14x8-bit multiplier for signal <n0098> created at line 2745.
+    Found 14x8-bit multiplier for signal <n0100> created at line 2753.
+    Summary:
+	inferred  12 Multiplier(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred  28 Multiplexer(s).
+Unit <hsvtorgb_fixpt> synthesized.
+
+Synthesizing Unit <mux_1495816f5f>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <mux_1495816f5f> synthesized.
+
+Synthesizing Unit <rgbtohsv_fixpt>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1243: Output port <fractional> of the instance <divider0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1243: Output port <rfd> of the instance <divider0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1243: Output port <rdy> of the instance <divider0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1253: Output port <fractional> of the instance <divider1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1253: Output port <rfd> of the instance <divider1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1253: Output port <rdy> of the instance <divider1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1263: Output port <fractional> of the instance <divider2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1263: Output port <rfd> of the instance <divider2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1263: Output port <rdy> of the instance <divider2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1273: Output port <fractional> of the instance <divider3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1273: Output port <rfd> of the instance <divider3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v" line 1273: Output port <rdy> of the instance <divider3> is unconnected or connected to loadless signal.
+    Found 18-bit subtractor for signal <rgbtohsv_fixpt_sub_temp_3> created at line 1405.
+    Found 10-bit subtractor for signal <GND_13_o_GND_13_o_sub_31_OUT> created at line 1449.
+    Found 10-bit subtractor for signal <GND_13_o_GND_13_o_sub_39_OUT> created at line 1477.
+    Found 10-bit subtractor for signal <GND_13_o_GND_13_o_sub_48_OUT> created at line 1514.
+    Found 34-bit adder for signal <n0341> created at line 1494.
+    Found 34-bit adder for signal <n0343> created at line 1531.
+    Found 8-bit adder for signal <GND_13_o_GND_13_o_add_72_OUT> created at line 1580.
+    Found 8-bit adder for signal <divider_quotient0[31]_GND_13_o_add_77_OUT> created at line 1588.
+    Found 8-bit adder for signal <GND_13_o_GND_13_o_add_82_OUT> created at line 1596.
+    Found 15x16-bit multiplier for signal <n0249> created at line 1342.
+    Found 15x16-bit multiplier for signal <n0250> created at line 1355.
+    Found 15x16-bit multiplier for signal <n0251> created at line 1368.
+    Found 16x16-bit multiplier for signal <rgbtohsv_fixpt_mul_temp_2_1> created at line 1552.
+    Found 14x8-bit multiplier for signal <n0255> created at line 1575.
+    Found 16x8-bit multiplier for signal <n0257> created at line 1583.
+    Found 16x8-bit multiplier for signal <n0259> created at line 1591.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[30]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[29]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[28]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[27]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[26]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[25]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[24]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[23]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[22]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[21]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[20]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[19]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[18]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[17]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[16]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[32]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[24]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[23]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[22]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[21]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[20]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[19]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[18]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[17]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[16]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_11_1[15]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[32]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[24]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[23]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[22]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[21]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[20]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[19]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[18]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[17]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[16]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_15_1[15]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[32]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[24]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[23]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[22]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[21]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[20]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[19]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[18]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[17]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[16]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_17_1[15]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rgbtohsv_fixpt_cast_5_1[31]>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit comparator greater for signal <r[7]_g[7]_LessThan_4_o> created at line 1371
+    Found 16-bit comparator greater for signal <GND_13_o_GND_13_o_LessThan_6_o> created at line 1377
+    Found 8-bit comparator greater for signal <g[7]_r[7]_LessThan_10_o> created at line 1387
+    Found 16-bit comparator greater for signal <GND_13_o_GND_13_o_LessThan_12_o> created at line 1393
+    Found 16-bit comparator equal for signal <GND_13_o_GND_13_o_equal_30_o> created at line 1446
+    Found 16-bit comparator equal for signal <GND_13_o_GND_13_o_equal_38_o> created at line 1474
+    Found 16-bit comparator equal for signal <GND_13_o_GND_13_o_equal_47_o> created at line 1511
+    Summary:
+	inferred   7 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  49 Latch(s).
+	inferred   7 Comparator(s).
+	inferred  54 Multiplexer(s).
+Unit <rgbtohsv_fixpt> synthesized.
+
+Synthesizing Unit <rgbtoxyz_fixpt>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 25-bit adder for signal <rgbtoxyz_fixpt_add_temp> created at line 1960.
+    Found 26-bit adder for signal <rgbtoxyz_fixpt_add_temp_1> created at line 1964.
+    Found 8-bit adder for signal <rgbtoxyz_fixpt_add_temp_1[23]_GND_150_o_add_12_OUT> created at line 1966.
+    Found 24-bit adder for signal <rgbtoxyz_fixpt_add_temp_2> created at line 1972.
+    Found 27-bit adder for signal <rgbtoxyz_fixpt_add_temp_3> created at line 1976.
+    Found 8-bit adder for signal <rgbtoxyz_fixpt_add_temp_3[24]_GND_150_o_add_27_OUT> created at line 1978.
+    Found 25-bit adder for signal <rgbtoxyz_fixpt_add_temp_4> created at line 1984.
+    Found 29-bit adder for signal <rgbtoxyz_fixpt_add_temp_5> created at line 1988.
+    Found 8-bit adder for signal <rgbtoxyz_fixpt_add_temp_5[26]_GND_150_o_add_42_OUT> created at line 1990.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp> created at line 1956.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_1> created at line 1958.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_2> created at line 1962.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_3> created at line 1968.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_4> created at line 1970.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_5> created at line 1974.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_6> created at line 1980.
+    Found 14x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_7> created at line 1982.
+    Found 13x8-bit multiplier for signal <rgbtoxyz_fixpt_mul_temp_8[20:0]> created at line 1986.
+    Summary:
+	inferred   9 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   3 Multiplexer(s).
+Unit <rgbtoxyz_fixpt> synthesized.
+
+Synthesizing Unit <rgbtoyiq_fixpt>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 25-bit subtractor for signal <rgbtoyiq_fixpt_sub_temp> created at line 2130.
+    Found 26-bit subtractor for signal <rgbtoyiq_fixpt_sub_temp_1> created at line 2136.
+    Found 26-bit subtractor for signal <rgbtoyiq_fixpt_sub_temp_2> created at line 2145.
+    Found 24-bit adder for signal <rgbtoyiq_fixpt_add_temp> created at line 2118.
+    Found 27-bit adder for signal <rgbtoyiq_fixpt_add_temp_1> created at line 2122.
+    Found 8-bit adder for signal <rgbtoyiq_fixpt_add_temp_1[24]_GND_152_o_add_12_OUT> created at line 2124.
+    Found 8-bit adder for signal <rgbtoyiq_fixpt_sub_temp_1[22]_GND_152_o_add_35_OUT> created at line 2139.
+    Found 26-bit adder for signal <rgbtoyiq_fixpt_add_temp_2> created at line 2151.
+    Found 8-bit adder for signal <rgbtoyiq_fixpt_add_temp_2[23]_GND_152_o_add_53_OUT> created at line 2153.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp> created at line 2114.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_1> created at line 2116.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_2> created at line 2120.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_3> created at line 2126.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_4> created at line 2128.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_5> created at line 2134.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_6> created at line 2141.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_7> created at line 2143.
+    Found 14x8-bit multiplier for signal <rgbtoyiq_fixpt_mul_temp_8> created at line 2149.
+    Summary:
+	inferred   9 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   6 Multiplexer(s).
+Unit <rgbtoyiq_fixpt> synthesized.
+
+Synthesizing Unit <xyztorgb_fixpt>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 26-bit subtractor for signal <xyztorgb_fixpt_sub_temp> created at line 1741.
+    Found 28-bit subtractor for signal <xyztorgb_fixpt_sub_temp_1> created at line 1747.
+    Found 9-bit subtractor for signal <xyztorgb_fixpt_add_cast> created at line 1752.
+    Found 27-bit subtractor for signal <xyztorgb_fixpt_sub_temp_2> created at line 1774.
+    Found 8-bit adder for signal <xyztorgb_fixpt_sub_temp_1[22]_GND_153_o_add_20_OUT> created at line 1750.
+    Found 24-bit adder for signal <xyztorgb_fixpt_add_temp> created at line 1758.
+    Found 29-bit adder for signal <xyztorgb_fixpt_add_temp_1> created at line 1765.
+    Found 8-bit adder for signal <xyztorgb_fixpt_add_temp_1[25]_GND_153_o_add_50_OUT> created at line 1768.
+    Found 30-bit adder for signal <xyztorgb_fixpt_add_temp_2> created at line 1780.
+    Found 8-bit adder for signal <xyztorgb_fixpt_add_temp_2[27]_GND_153_o_add_68_OUT> created at line 1782.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp> created at line 1737.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp_1> created at line 1739.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp_2> created at line 1745.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp_3> created at line 1755.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp_4> created at line 1763.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp_5> created at line 1770.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp_6> created at line 1772.
+    Found 14x8-bit multiplier for signal <xyztorgb_fixpt_mul_temp_7> created at line 1778.
+    Summary:
+	inferred   8 Multiplier(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred   9 Multiplexer(s).
+Unit <xyztorgb_fixpt> synthesized.
+
+Synthesizing Unit <yiqtorgb_fixpt>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 26-bit subtractor for signal <yiqtorgb_fixpt_sub_temp> created at line 2293.
+    Found 27-bit subtractor for signal <yiqtorgb_fixpt_sub_temp_1> created at line 2299.
+    Found 24-bit subtractor for signal <yiqtorgb_fixpt_sub_temp_2> created at line 2308.
+    Found 24-bit adder for signal <yiqtorgb_fixpt_add_temp> created at line 2281.
+    Found 25-bit adder for signal <yiqtorgb_fixpt_add_temp_1> created at line 2285.
+    Found 8-bit adder for signal <yiqtorgb_fixpt_add_temp_1[21]_GND_155_o_add_12_OUT> created at line 2287.
+    Found 8-bit adder for signal <yiqtorgb_fixpt_sub_temp_1[22]_GND_155_o_add_35_OUT> created at line 2302.
+    Found 24-bit adder for signal <yiqtorgb_fixpt_add_temp_2> created at line 2314.
+    Found 8-bit adder for signal <yiqtorgb_fixpt_add_temp_2[20]_GND_155_o_add_53_OUT> created at line 2316.
+    Found 14x8-bit multiplier for signal <yiqtorgb_fixpt_mul_temp> created at line 2279.
+    Found 14x8-bit multiplier for signal <yiqtorgb_fixpt_mul_temp_1> created at line 2283.
+    Found 14x8-bit multiplier for signal <yiqtorgb_fixpt_mul_temp_2> created at line 2291.
+    Found 14x8-bit multiplier for signal <yiqtorgb_fixpt_mul_temp_3> created at line 2297.
+    Found 14x8-bit multiplier for signal <yiqtorgb_fixpt_mul_temp_4> created at line 2306.
+    Found 14x8-bit multiplier for signal <yiqtorgb_fixpt_mul_temp_5> created at line 2312.
+    Summary:
+	inferred   6 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   6 Multiplexer(s).
+Unit <yiqtorgb_fixpt> synthesized.
+
+Synthesizing Unit <default_clock_driver_Color_Space>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v".
+    Set property "syn_noprune = true".
+    Set property "optimize_primitives = false".
+    Set property "dont_touch = true".
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v" line 334: Output port <clr> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v" line 334: Output port <ce_logic> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <default_clock_driver_Color_Space> synthesized.
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v".
+        log_2_period = 1
+        period = 1
+        use_bufg = 0
+        pipeline_regs = 5
+        max_pipeline_regs = 8
+        num_pipeline_regs = 5
+        factor = 5
+        rem_pipeline_regs = 1
+        trunc_period = 1'b1
+        period_floor = 2
+        power_of_2_counter = 1
+        cnt_width = 1
+        clk_for_ce_pulse_minus1 = 1'b0
+        clk_for_ce_pulse_minus2 = 1'b0
+        clk_for_ce_pulse_minus_regs = 1'b0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+INFO:Xst:3210 - "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space_cw.v" line 230: Output port <o> of the instance <clr_reg> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <xlclockdriver> synthesized.
+
+Synthesizing Unit <synth_reg_w_init>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+        width = 1
+        init_index = 0
+        init_value = 1'b0
+        latency = 1
+    Summary:
+	no macro.
+Unit <synth_reg_w_init> synthesized.
+
+Synthesizing Unit <single_reg_w_init>.
+    Related source file is "C:\Users\Sechw\Documents\MATLAB\4440\netlist\color_space.v".
+        width = 1
+        init_index = 0
+        init_value = 1'b0
+        init_index_val = 1'b0
+        result = 1'b0
+        init_const = 1'b0
+    Summary:
+	no macro.
+Unit <single_reg_w_init> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 51
+ 13x8-bit multiplier                                   : 1
+ 14x13-bit multiplier                                  : 3
+ 14x6-bit multiplier                                   : 1
+ 14x8-bit multiplier                                   : 35
+ 15x6-bit multiplier                                   : 2
+ 16x15-bit multiplier                                  : 3
+ 16x16-bit multiplier                                  : 1
+ 16x8-bit multiplier                                   : 2
+ 29x6-bit multiplier                                   : 1
+ 30x6-bit multiplier                                   : 1
+ 6x3-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 53
+ 10-bit subtractor                                     : 3
+ 16-bit subtractor                                     : 1
+ 18-bit subtractor                                     : 1
+ 22-bit subtractor                                     : 1
+ 23-bit subtractor                                     : 1
+ 24-bit adder                                          : 5
+ 24-bit subtractor                                     : 1
+ 25-bit adder                                          : 3
+ 25-bit subtractor                                     : 1
+ 26-bit adder                                          : 2
+ 26-bit subtractor                                     : 4
+ 27-bit adder                                          : 2
+ 27-bit subtractor                                     : 2
+ 28-bit subtractor                                     : 1
+ 29-bit adder                                          : 2
+ 30-bit adder                                          : 1
+ 34-bit adder                                          : 2
+ 8-bit adder                                           : 18
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Latches                                              : 49
+ 1-bit latch                                           : 49
+# Comparators                                          : 7
+ 16-bit comparator equal                               : 3
+ 16-bit comparator greater                             : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 106
+ 1-bit 2-to-1 multiplexer                              : 33
+ 14-bit 2-to-1 multiplexer                             : 18
+ 15-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 17
+ 23-bit 2-to-1 multiplexer                             : 3
+ 24-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 3
+ 26-bit 2-to-1 multiplexer                             : 1
+ 29-bit 2-to-1 multiplexer                             : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 22
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <constant1> is unconnected in block <color_space_x0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <constant2> is unconnected in block <color_space_x0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <constant3> is unconnected in block <color_space_x0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <constant4> is unconnected in block <color_space_x0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <constant9> is unconnected in block <color_space_x0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <constant_x0> is unconnected in block <color_space_x0>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_15_1_15> (without init value) has a constant value of 0 in block <rgb_to_hsv>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_17_1_15> (without init value) has a constant value of 0 in block <rgb_to_hsv>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_11_1_15> (without init value) has a constant value of 0 in block <rgb_to_hsv>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <hsvtorgb_fixpt>.
+	Multiplier <Mmult_hsvtorgb_fixpt_mul_temp_6_1[20:0]> in block <hsvtorgb_fixpt> and adder/subtractor <Msub_n0093[22:0]> in block <hsvtorgb_fixpt> are combined into a MAC<Maddsub_hsvtorgb_fixpt_mul_temp_6_1[20:0]>.
+	Multiplier <Mmult_hsvtorgb_fixpt_mul_temp_4_1[19:0]> in block <hsvtorgb_fixpt> and adder/subtractor <Msub_n0087[21:0]> in block <hsvtorgb_fixpt> are combined into a MAC<Maddsub_hsvtorgb_fixpt_mul_temp_4_1[19:0]>.
+Unit <hsvtorgb_fixpt> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rgbtoxyz_fixpt>.
+	Multiplier <Mmult_rgbtoxyz_fixpt_mul_temp_5> in block <rgbtoxyz_fixpt> and adder/subtractor <Madd_rgbtoxyz_fixpt_add_temp_3> in block <rgbtoxyz_fixpt> are combined into a MAC<Maddsub_rgbtoxyz_fixpt_mul_temp_5>.
+	Multiplier <Mmult_rgbtoxyz_fixpt_mul_temp_2> in block <rgbtoxyz_fixpt> and adder/subtractor <Madd_rgbtoxyz_fixpt_add_temp_1> in block <rgbtoxyz_fixpt> are combined into a MAC<Maddsub_rgbtoxyz_fixpt_mul_temp_2>.
+	Multiplier <Mmult_rgbtoxyz_fixpt_mul_temp_3> in block <rgbtoxyz_fixpt> and adder/subtractor <Madd_rgbtoxyz_fixpt_add_temp_2> in block <rgbtoxyz_fixpt> are combined into a MAC<Maddsub_rgbtoxyz_fixpt_mul_temp_3>.
+	Multiplier <Mmult_rgbtoxyz_fixpt_mul_temp_1> in block <rgbtoxyz_fixpt> and adder/subtractor <Madd_rgbtoxyz_fixpt_add_temp> in block <rgbtoxyz_fixpt> are combined into a MAC<Maddsub_rgbtoxyz_fixpt_mul_temp_1>.
+	Multiplier <Mmult_rgbtoxyz_fixpt_mul_temp_6> in block <rgbtoxyz_fixpt> and adder/subtractor <Madd_rgbtoxyz_fixpt_add_temp_4> in block <rgbtoxyz_fixpt> are combined into a MAC<Maddsub_rgbtoxyz_fixpt_mul_temp_6>.
+Unit <rgbtoxyz_fixpt> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rgbtoyiq_fixpt>.
+	Multiplier <Mmult_rgbtoyiq_fixpt_mul_temp_5> in block <rgbtoyiq_fixpt> and adder/subtractor <Msub_rgbtoyiq_fixpt_sub_temp_1> in block <rgbtoyiq_fixpt> are combined into a MAC<Maddsub_rgbtoyiq_fixpt_mul_temp_5>.
+	Multiplier <Mmult_rgbtoyiq_fixpt_mul_temp_2> in block <rgbtoyiq_fixpt> and adder/subtractor <Madd_rgbtoyiq_fixpt_add_temp_1> in block <rgbtoyiq_fixpt> are combined into a MAC<Maddsub_rgbtoyiq_fixpt_mul_temp_2>.
+	Multiplier <Mmult_rgbtoyiq_fixpt_mul_temp> in block <rgbtoyiq_fixpt> and adder/subtractor <Madd_rgbtoyiq_fixpt_add_temp> in block <rgbtoyiq_fixpt> are combined into a MAC<Maddsub_rgbtoyiq_fixpt_mul_temp>.
+	Multiplier <Mmult_rgbtoyiq_fixpt_mul_temp_6> in block <rgbtoyiq_fixpt> and adder/subtractor <Msub_rgbtoyiq_fixpt_sub_temp_2> in block <rgbtoyiq_fixpt> are combined into a MAC<Maddsub_rgbtoyiq_fixpt_mul_temp_6>.
+	Multiplier <Mmult_rgbtoyiq_fixpt_mul_temp_4> in block <rgbtoyiq_fixpt> and adder/subtractor <Msub_rgbtoyiq_fixpt_sub_temp> in block <rgbtoyiq_fixpt> are combined into a MAC<Maddsub_rgbtoyiq_fixpt_mul_temp_4>.
+Unit <rgbtoyiq_fixpt> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xyztorgb_fixpt>.
+	Multiplier <Mmult_xyztorgb_fixpt_mul_temp_4> in block <xyztorgb_fixpt> and adder/subtractor <Madd_xyztorgb_fixpt_add_temp_1> in block <xyztorgb_fixpt> are combined into a MAC<Maddsub_xyztorgb_fixpt_mul_temp_4>.
+	Multiplier <Mmult_xyztorgb_fixpt_mul_temp_2> in block <xyztorgb_fixpt> and adder/subtractor <Msub_xyztorgb_fixpt_sub_temp_1> in block <xyztorgb_fixpt> are combined into a MAC<Maddsub_xyztorgb_fixpt_mul_temp_2>.
+	Multiplier <Mmult_xyztorgb_fixpt_mul_temp_5> in block <xyztorgb_fixpt> and adder/subtractor <Msub_xyztorgb_fixpt_sub_temp_2> in block <xyztorgb_fixpt> are combined into a MAC<Maddsub_xyztorgb_fixpt_mul_temp_5>.
+	Multiplier <Mmult_xyztorgb_fixpt_mul_temp_1> in block <xyztorgb_fixpt> and adder/subtractor <Msub_xyztorgb_fixpt_sub_temp> in block <xyztorgb_fixpt> are combined into a MAC<Maddsub_xyztorgb_fixpt_mul_temp_1>.
+	Multiplier <Mmult_xyztorgb_fixpt_mul_temp_3> in block <xyztorgb_fixpt> and adder/subtractor <Madd_xyztorgb_fixpt_add_temp> in block <xyztorgb_fixpt> are combined into a MAC<Maddsub_xyztorgb_fixpt_mul_temp_3>.
+Unit <xyztorgb_fixpt> synthesized (advanced).
+
+Synthesizing (advanced) Unit <yiqtorgb_fixpt>.
+	Multiplier <Mmult_yiqtorgb_fixpt_mul_temp_5> in block <yiqtorgb_fixpt> and adder/subtractor <Madd_yiqtorgb_fixpt_add_temp_2> in block <yiqtorgb_fixpt> are combined into a MAC<Maddsub_yiqtorgb_fixpt_mul_temp_5>.
+	Multiplier <Mmult_yiqtorgb_fixpt_mul_temp_1> in block <yiqtorgb_fixpt> and adder/subtractor <Madd_yiqtorgb_fixpt_add_temp_1> in block <yiqtorgb_fixpt> are combined into a MAC<Maddsub_yiqtorgb_fixpt_mul_temp_1>.
+	Multiplier <Mmult_yiqtorgb_fixpt_mul_temp> in block <yiqtorgb_fixpt> and adder/subtractor <Madd_yiqtorgb_fixpt_add_temp> in block <yiqtorgb_fixpt> are combined into a MAC<Maddsub_yiqtorgb_fixpt_mul_temp>.
+	Multiplier <Mmult_yiqtorgb_fixpt_mul_temp_4> in block <yiqtorgb_fixpt> and adder/subtractor <Msub_yiqtorgb_fixpt_sub_temp_2> in block <yiqtorgb_fixpt> are combined into a MAC<Maddsub_yiqtorgb_fixpt_mul_temp_4>.
+	Multiplier <Mmult_yiqtorgb_fixpt_mul_temp_2> in block <yiqtorgb_fixpt> and adder/subtractor <Msub_yiqtorgb_fixpt_sub_temp> in block <yiqtorgb_fixpt> are combined into a MAC<Maddsub_yiqtorgb_fixpt_mul_temp_2>.
+Unit <yiqtorgb_fixpt> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 22
+ 14x6-to-22-bit MAC                                    : 1
+ 14x8-to-24-bit MAC                                    : 6
+ 14x8-to-25-bit MAC                                    : 4
+ 14x8-to-26-bit MAC                                    : 5
+ 14x8-to-27-bit MAC                                    : 3
+ 14x8-to-28-bit MAC                                    : 1
+ 14x8-to-29-bit MAC                                    : 1
+ 15x6-to-23-bit MAC                                    : 1
+# Multipliers                                          : 29
+ 13x8-bit multiplier                                   : 1
+ 14x13-bit multiplier                                  : 3
+ 14x8-bit multiplier                                   : 15
+ 15x6-bit multiplier                                   : 1
+ 16x15-bit multiplier                                  : 3
+ 16x16-bit multiplier                                  : 1
+ 16x8-bit multiplier                                   : 2
+ 29x6-bit multiplier                                   : 1
+ 30x6-bit multiplier                                   : 1
+ 6x3-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 31
+ 10-bit subtractor                                     : 3
+ 16-bit subtractor                                     : 1
+ 18-bit subtractor                                     : 1
+ 26-bit adder                                          : 1
+ 27-bit subtractor                                     : 1
+ 29-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 34-bit adder                                          : 2
+ 8-bit adder                                           : 18
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 7
+ 16-bit comparator equal                               : 3
+ 16-bit comparator greater                             : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 106
+ 1-bit 2-to-1 multiplexer                              : 33
+ 14-bit 2-to-1 multiplexer                             : 18
+ 15-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 17
+ 23-bit 2-to-1 multiplexer                             : 3
+ 24-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 3
+ 26-bit 2-to-1 multiplexer                             : 1
+ 29-bit 2-to-1 multiplexer                             : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 22
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <color_space>: instances <constant1>, <constant2> of unit <constant_ae323e07fc> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <color_space>: instances <constant1>, <constant3> of unit <constant_ae323e07fc> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <color_space>: instances <constant1>, <constant4> of unit <constant_ae323e07fc> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <color_space>: instances <constant1>, <constant9> of unit <constant_ae323e07fc> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <color_space>: instances <constant1>, <constant_x0> of unit <constant_ae323e07fc> are equivalent, second instance is removed
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_15_1_15> (without init value) has a constant value of 0 in block <rgbtohsv_fixpt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_17_1_15> (without init value) has a constant value of 0 in block <rgbtohsv_fixpt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_11_1_15> (without init value) has a constant value of 0 in block <rgbtohsv_fixpt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_15_1_32> (without init value) has a constant value of 0 in block <rgbtohsv_fixpt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_17_1_32> (without init value) has a constant value of 0 in block <rgbtohsv_fixpt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rgbtohsv_fixpt_cast_11_1_32> (without init value) has a constant value of 0 in block <rgbtohsv_fixpt>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <rgbtohsv_fixpt_cast_5_1_23> in Unit <rgbtohsv_fixpt> is equivalent to the following 7 FFs/Latches, which will be removed : <rgbtohsv_fixpt_cast_5_1_22> <rgbtohsv_fixpt_cast_5_1_21> <rgbtohsv_fixpt_cast_5_1_20> <rgbtohsv_fixpt_cast_5_1_19> <rgbtohsv_fixpt_cast_5_1_18> <rgbtohsv_fixpt_cast_5_1_17> <rgbtohsv_fixpt_cast_5_1_16> 
+
+Optimizing unit <color_space_cw> ...
+
+Optimizing unit <color_space> ...
+
+Optimizing unit <hsvtorgb_fixpt> ...
+
+Optimizing unit <rgbtohsv_fixpt> ...
+
+Optimizing unit <xyztorgb_fixpt> ...
+
+Optimizing unit <yiqtorgb_fixpt> ...
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+Annotating constraints using XCF file 'C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xcf'
+XCF parsing done.
+WARNING:Xst:2173 - Found black boxes on which forward tracing can not be performed on edge 'clk':
+ persistentdff_inst color_space_x0/rgb_to_hsv/divider0 color_space_x0/rgb_to_hsv/divider1 color_space_x0/rgb_to_hsv/divider2 color_space_x0/rgb_to_hsv/divider3
+WARNING:Xst:2174 - These might be cores which have not been read
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block color_space_cw, actual ratio is 1.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp> has a constant value of 0 in block <color_space_cw>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : color_space_cw.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1349
+#      GND                         : 1
+#      LUT1                        : 5
+#      LUT2                        : 332
+#      LUT3                        : 168
+#      LUT4                        : 46
+#      LUT5                        : 138
+#      LUT6                        : 303
+#      MUXCY                       : 189
+#      MUXF7                       : 9
+#      VCC                         : 1
+#      XORCY                       : 157
+# FlipFlops/Latches                : 37
+#      FDRE                        : 1
+#      LD                          : 18
+#      LD_1                        : 9
+#      LDE_1                       : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 74
+#      IBUF                        : 26
+#      OBUF                        : 48
+# DSPs                             : 52
+#      DSP48E1                     : 52
+# Others                           : 6
+#      divider0                    : 1
+#      divider1                    : 3
+#      TIMESPEC                    : 1
+#      xlpersistentdff             : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx130tff1156-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              37  out of  160000     0%  
+ Number of Slice LUTs:                  992  out of  80000     1%  
+    Number used as Logic:               992  out of  80000     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    993
+   Number with an unused Flip Flop:     956  out of    993    96%  
+   Number with an unused LUT:             1  out of    993     0%  
+   Number of fully used LUT-FF pairs:    36  out of    993     3%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          76
+ Number of bonded IOBs:                  75  out of    600    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                     52  out of    480    10%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
+Clock Signal                                                                                                        | Clock buffer(FF name)                                         | Load  |
+--------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
+clk                                                                                                                 | BUFGP                                                         | 1     |
+color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_equal_22_o(color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_equal_22_o[15]:O)| NONE(*)(color_space_x0/rgb_to_hsv/rgbtohsv_fixpt_cast_5_1_31) | 9     |
+color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_equal_29_o(color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_equal_29_o[15]:O)| NONE(*)(color_space_x0/rgb_to_hsv/rgbtohsv_fixpt_cast_11_1_16)| 9     |
+color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_AND_3464_o(color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_AND_3464_o1:O)   | NONE(*)(color_space_x0/rgb_to_hsv/rgbtohsv_fixpt_cast_17_1_16)| 9     |
+color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_AND_3397_o(color_space_x0/rgb_to_hsv/GND_13_o_GND_13_o_AND_3397_o1:O)   | NONE(*)(color_space_x0/rgb_to_hsv/rgbtohsv_fixpt_cast_15_1_16)| 9     |
+--------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 11.710ns
+   Maximum output required time after clock: 0.387ns
+   Maximum combinational path delay: 49.878ns
+
+=========================================================================
+Timing constraint: TS_clk_e1ed859f = PERIOD TIMEGRP "clk_e1ed859f" 10 nS HIGH 5 nS
+-------------------------------------------------------------------------
+WARNING:Xst:1415 - No path found for this constraint.
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.26 secs
+ 
+--> 
+
+Total memory usage is 323424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  134 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+

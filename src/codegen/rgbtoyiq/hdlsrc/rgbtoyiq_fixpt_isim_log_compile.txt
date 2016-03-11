@@ -1,0 +1,2 @@
+Analyzing Verilog file "rgbtoyiq_fixpt.v" into library xlib
+Analyzing Verilog file "rgbtoyiq_fixpt_tb.v" into library xlib

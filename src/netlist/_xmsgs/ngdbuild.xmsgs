@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">default_clock_driver_color_space_x0/xlclockdriver_1/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT_FILE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000606</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB16</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT_FILE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000606</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB16</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT_FILE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk00000606</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB16</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT_FILE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">blk0000060e</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB16</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+</messages>
+

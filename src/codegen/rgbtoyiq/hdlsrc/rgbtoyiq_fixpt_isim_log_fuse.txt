@@ -1,0 +1,9 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -f rgbtoyiq_fixpt_tb_simprj.do 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Starting static elaboration
+Completed static elaboration
+Compiling module rgbtoyiq_fixpt
+Compiling module rgbtoyiq_fixpt_tb
+Time Resolution for simulation is 1ns.

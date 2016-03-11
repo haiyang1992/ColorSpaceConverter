@@ -1,0 +1,12 @@
+# Output products list for <core>
+core.asy
+core.gise
+core.ngc
+core.sym
+core.v
+core.veo
+core.xco
+core.xise
+core_flist.txt
+core_readme.txt
+core_xmdf.tcl

@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc color_space_cw.ucf -p xc5vlx110t-ff1136-1 color_space_cw.ngc color_space_cw.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication on -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o color_space_cw_map.ncd color_space_cw.ngd color_space_cw.pcf 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc color_space_cw.ucf -p xc6vlx130t-ff1156-1 color_space_cw.ngc color_space_cw.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication on -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o color_space_cw_map.ncd color_space_cw.ngd color_space_cw.pcf 
+par -w -intstyle ise -ol high -mt off color_space_cw_map.ncd color_space_cw.ncd color_space_cw.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml color_space_cw.twx color_space_cw.ncd -o color_space_cw.twr color_space_cw.pcf -ucf color_space_cw.ucf 
+xst -intstyle ise -ifn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.xst" -ofn "C:/Users/Sechw/Documents/MATLAB/4440/netlist/color_space_cw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc color_space_cw.ucf -p xc6vlx130t-ff1156-1 color_space_cw.ngc color_space_cw.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication on -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o color_space_cw_map.ncd color_space_cw.ngd color_space_cw.pcf 
+par -w -intstyle ise -ol high -mt off color_space_cw_map.ncd color_space_cw.ncd color_space_cw.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml color_space_cw.twx color_space_cw.ncd -o color_space_cw.twr color_space_cw.pcf -ucf color_space_cw.ucf 

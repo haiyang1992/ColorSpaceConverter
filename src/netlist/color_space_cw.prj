@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/divider1.v"
+verilog work "ipcore_dir/divider0.v"
+verilog work "color_space.v"
+verilog work "color_space_cw.v"
